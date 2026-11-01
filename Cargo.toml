@@ -4,6 +4,24 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 
+description = "Generate html files from turtle (.ttl) files"
+repositor = "https://github.com/KyrtTech/spm.turtle2html"
+homepage = "https://the-spm.org/"
+readme = "README.md"
+
+keywords = [
+    "rdf",
+    "turtle",
+    "html",
+    "ontology"
+]
+
+categories = [
+    "command-line-interface",
+    "cli",
+    "dev-tools"
+]
+
 [dependencies]
 rio_api = "0.7.1"
 rio_turtle = "0.7.1"

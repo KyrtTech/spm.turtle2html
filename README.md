@@ -17,7 +17,7 @@
 Requires [Rust](https://www.rust-lang.org/). From this crate’s directory:
 
 ```bash
-cd spm.turtle2rdf
+cd spm.turtle2html
 cargo build --release
 ```
 

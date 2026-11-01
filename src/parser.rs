@@ -85,7 +85,7 @@ fn rewrite_iri(iri: &str, publish_config: &Option<PublishConfig>) -> String {
                     new_iri_url.set_path(rewrite);
                 }
 
-                if publish_config.should_use_extesion_for_links {
+                if publish_config.should_use_extension_for_links {
                     let mut path = new_iri_url.path().to_string();
                     path.push_str(".html");
                     new_iri_url.set_path(&path);

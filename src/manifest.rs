@@ -7,7 +7,7 @@ use std::collections::HashMap;
 pub struct PublishConfig {
     pub url: String,
     pub ontology_prefix: String,
-    pub should_use_extesion_for_links: bool,
+    pub should_use_extension_for_links: bool,
     pub iri_routes: HashMap<String, String>,
     pub index: Option<String>,
 }
@@ -16,7 +16,7 @@ impl Default for PublishConfig {
         PublishConfig {
             url: "".to_string(),
             ontology_prefix: "".to_string(),
-            should_use_extesion_for_links: false,
+            should_use_extension_for_links: false,
             iri_routes: HashMap::new(),
             index: None,
         }

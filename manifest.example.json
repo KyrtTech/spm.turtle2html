@@ -8,7 +8,7 @@
     "index": "index.html",
     "url": "https://docs.example.com/ontology/",
     "ontology_prefix": "http://the-spm.org/",
-    "should_use_extesion_for_links": true,
+    "should_use_extension_for_links": true,
     "iri_routes": {
       "entities/apps": "entities/app",
       "entities/cloud_providers": "entities/cloud-providers",

@@ -68,9 +68,9 @@ When present, ontology IRIs in link `href`s can be rewritten for deployment:
 - **`url`**: Base URL prefix used in generated links (e.g. your static docs site). Trailing slash is optional; it is normalized when matching “internal” links for [new-tab behavior](#generated-html-behavior).
 - **`ontology_prefix`**: Prefix of IRIs in the Turtle that should be replaced by `url` (e.g. `http://the-spm.org/`). Predicate and object links whose IRI starts with this prefix are rewritten before being written to HTML.
 - **`iri_routes`**: Map from an ontology **document path** (the path segment in the IRI after `ontology_prefix`, before `#`) to the **published document path** (relative to `url`, without `.html`). Use this when Turtle namespace paths differ from the HTML paths produced by `routes` (for example `entities/apps` in RDF vs `entities/app` on disk). If a path is not listed, the document path is left unchanged after the prefix swap. An empty object `{}` is valid.
-- **`should_use_extesion_for_links`**: When `true`, `.html` is appended to the document path in rewritten links after `iri_routes` is applied. When `false`, only the prefix swap and `iri_routes` remapping run.
+- **`should_use_extension_for_links`**: When `true`, `.html` is appended to the document path in rewritten links after `iri_routes` is applied. When `false`, only the prefix swap and `iri_routes` remapping run.
 
-Link rewriting order: replace `ontology_prefix` with `url`, remap the document path with `iri_routes`, then append `.html` when `should_use_extesion_for_links` is `true`. URI fragments (`#localName`) are preserved.
+Link rewriting order: replace `ontology_prefix` with `url`, remap the document path with `iri_routes`, then append `.html` when `should_use_extension_for_links` is `true`. URI fragments (`#localName`) are preserved.
 
 If `publish` is omitted, links keep the full IRIs from the Turtle (still useful for local preview).
 
@@ -89,7 +89,7 @@ See **`manifest.example.json`** in this directory for a copy-paste template. Min
     "index": "index.html",
     "url": "https://docs.example.com/ontology/",
     "ontology_prefix": "http://the-spm.org/",
-    "should_use_extesion_for_links": true,
+    "should_use_extension_for_links": true,
     "iri_routes": {
       "entities/apps": "entities/app",
       "entities/cloud_providers": "entities/cloud-providers"

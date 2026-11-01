@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT"
 
 description = "Generate html files from turtle (.ttl) files"
-repositor = "https://github.com/KyrtTech/spm.turtle2html"
+repository = "https://github.com/KyrtTech/spm.turtle2html"
 homepage = "https://the-spm.org/"
 readme = "README.md"
 
@@ -17,9 +17,8 @@ keywords = [
 ]
 
 categories = [
-    "command-line-interface",
-    "cli",
-    "dev-tools"
+    "command-line-utilities",
+    "development-tools"
 ]
 
 [dependencies]
